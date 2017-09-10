@@ -12,6 +12,7 @@
 		AB1743571F6484C400CA9AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1743551F6484C400CA9AB3 /* Main.storyboard */; };
 		AB1743591F6484C400CA9AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1743581F6484C400CA9AB3 /* Assets.xcassets */; };
 		AB17435C1F6484C400CA9AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB17435A1F6484C400CA9AB3 /* LaunchScreen.storyboard */; };
+		ABBE6BF21F65CA3A000BD9A4 /* ExpandedMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6BF11F65CA3A000BD9A4 /* ExpandedMenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AB1743581F6484C400CA9AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB17435B1F6484C400CA9AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB17435D1F6484C400CA9AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBE6BF11F65CA3A000BD9A4 /* ExpandedMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedMenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				AB1743511F6484C400CA9AB3 /* AppDelegate.swift */,
 				AB1743531F6484C400CA9AB3 /* ViewController.swift */,
+				ABBE6BF11F65CA3A000BD9A4 /* ExpandedMenuVC.swift */,
 				AB1743551F6484C400CA9AB3 /* Main.storyboard */,
 				AB1743581F6484C400CA9AB3 /* Assets.xcassets */,
 				AB17435A1F6484C400CA9AB3 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB1743541F6484C400CA9AB3 /* ViewController.swift in Sources */,
+				ABBE6BF21F65CA3A000BD9A4 /* ExpandedMenuVC.swift in Sources */,
 				AB1743521F6484C400CA9AB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				AB1743621F6484C400CA9AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

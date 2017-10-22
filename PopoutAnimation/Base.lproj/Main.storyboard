@@ -135,12 +135,22 @@
                                     <segue destination="ejV-Vh-yhI" kind="show" id="KNN-KU-Rxe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-kX-Zo4">
+                                <rect key="frame" x="112" y="116" width="150" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Shaking Pulses"/>
+                                <connections>
+                                    <segue destination="YZy-4j-dQP" kind="show" id="ByF-Kj-gnl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.67323513817454761" blue="0.09695799137181893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="lWD-3k-3QQ" secondAttribute="bottom" constant="-75" id="1xe-7f-WNn"/>
+                            <constraint firstItem="ai0-kX-Zo4" firstAttribute="top" secondItem="Tbt-bp-fi1" secondAttribute="bottom" constant="8" id="O7R-so-hS7"/>
                             <constraint firstItem="O4y-K7-Q7e" firstAttribute="centerX" secondItem="ptO-0g-gv5" secondAttribute="centerX" id="Pnd-ae-REn"/>
                             <constraint firstItem="lWD-3k-3QQ" firstAttribute="leading" secondItem="ptO-0g-gv5" secondAttribute="leading" id="YWy-Ql-tuB"/>
+                            <constraint firstItem="ai0-kX-Zo4" firstAttribute="centerX" secondItem="ptO-0g-gv5" secondAttribute="centerX" id="lNb-Eo-DFG"/>
                             <constraint firstAttribute="trailing" secondItem="lWD-3k-3QQ" secondAttribute="trailing" id="oyu-5E-QGJ"/>
                             <constraint firstItem="Tbt-bp-fi1" firstAttribute="top" secondItem="O4y-K7-Q7e" secondAttribute="bottom" constant="10" id="rcr-UP-d0V"/>
                             <constraint firstItem="O4y-K7-Q7e" firstAttribute="top" secondItem="FNX-cf-7Vn" secondAttribute="bottom" id="s6A-iQ-tor"/>
@@ -196,6 +206,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCU-gG-Oho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2784.8000000000002" y="320.68965517241384"/>
+        </scene>
+        <!--PulsingVC-->
+        <scene sceneID="VgK-0i-TpO">
+            <objects>
+                <viewController id="YZy-4j-dQP" customClass="PulsingVC" customModule="PopoutAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="557-vQ-FvW"/>
+                        <viewControllerLayoutGuide type="bottom" id="www-xB-in1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Vd-CA-7F4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1N-j7-3Eo" customClass="ShakyTF" customModule="PopoutAnimation" customModuleProvider="target">
+                                <rect key="frame" x="43" y="48" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9227871192893401" green="0.9227871192893401" blue="0.9227871192893401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YZy-4j-dQP" id="BpT-KV-7ZB"/>
+                                </connections>
+                            </textField>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="osQ-pt-uo1">
+                                <rect key="frame" x="67" y="198" width="240" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="yYu-wi-UeZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="151"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7a-pk-LDH">
+                                            <rect key="frame" x="101" y="101" width="39" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Close"/>
+                                            <connections>
+                                                <action selector="closeBtn:" destination="YZy-4j-dQP" eventType="touchUpInside" id="k2h-sw-LfA"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.74459652398063192" green="0.9227871192893401" blue="0.61004562686753161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xh-o0-xmk">
+                                <rect key="frame" x="158" y="605" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open"/>
+                                <connections>
+                                    <action selector="closeBtn:" destination="YZy-4j-dQP" eventType="touchUpInside" id="cNf-MO-erN"/>
+                                    <action selector="openBtn:" destination="YZy-4j-dQP" eventType="touchUpInside" id="EqU-bw-xsX"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MN9-fM-Iwl">
+                                <rect key="frame" x="282" y="605" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationSwitch" destination="MN9-fM-Iwl" id="dC0-Lf-qWo"/>
+                        <outlet property="popupView" destination="osQ-pt-uo1" id="WeZ-EL-VqT"/>
+                        <outlet property="shakyTF" destination="n1N-j7-3Eo" id="s3T-5R-LI1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1g-a1-22X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="825.33733133433293"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X3A-Mw-fhv">

@@ -13,6 +13,8 @@
 		AB1743591F6484C400CA9AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1743581F6484C400CA9AB3 /* Assets.xcassets */; };
 		AB17435C1F6484C400CA9AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB17435A1F6484C400CA9AB3 /* LaunchScreen.storyboard */; };
 		AB30E5D91F6CEAC7009DD817 /* searchbarTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30E5D81F6CEAC7009DD817 /* searchbarTVC.swift */; };
+		AB30E5DB1F6D23BC009DD817 /* ShakyTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30E5DA1F6D23BC009DD817 /* ShakyTF.swift */; };
+		AB30E5DD1F6D253B009DD817 /* PulsingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30E5DC1F6D253B009DD817 /* PulsingVC.swift */; };
 		ABBE6BF21F65CA3A000BD9A4 /* ExpandedMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6BF11F65CA3A000BD9A4 /* ExpandedMenuVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		AB17435B1F6484C400CA9AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB17435D1F6484C400CA9AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB30E5D81F6CEAC7009DD817 /* searchbarTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchbarTVC.swift; sourceTree = "<group>"; };
+		AB30E5DA1F6D23BC009DD817 /* ShakyTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakyTF.swift; sourceTree = "<group>"; };
+		AB30E5DC1F6D253B009DD817 /* PulsingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsingVC.swift; sourceTree = "<group>"; };
 		ABBE6BF11F65CA3A000BD9A4 /* ExpandedMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedMenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,8 @@
 				AB1743531F6484C400CA9AB3 /* ViewController.swift */,
 				ABBE6BF11F65CA3A000BD9A4 /* ExpandedMenuVC.swift */,
 				AB1743551F6484C400CA9AB3 /* Main.storyboard */,
+				AB30E5DA1F6D23BC009DD817 /* ShakyTF.swift */,
+				AB30E5DC1F6D253B009DD817 /* PulsingVC.swift */,
 				AB1743581F6484C400CA9AB3 /* Assets.xcassets */,
 				AB17435A1F6484C400CA9AB3 /* LaunchScreen.storyboard */,
 				AB17435D1F6484C400CA9AB3 /* Info.plist */,
@@ -102,6 +108,7 @@
 				TargetAttributes = {
 					AB17434D1F6484C400CA9AB3 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5C332PLDTQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,10 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB30E5DB1F6D23BC009DD817 /* ShakyTF.swift in Sources */,
 				AB1743541F6484C400CA9AB3 /* ViewController.swift in Sources */,
 				AB30E5D91F6CEAC7009DD817 /* searchbarTVC.swift in Sources */,
 				ABBE6BF21F65CA3A000BD9A4 /* ExpandedMenuVC.swift in Sources */,
 				AB1743521F6484C400CA9AB3 /* AppDelegate.swift in Sources */,
+				AB30E5DD1F6D253B009DD817 /* PulsingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5C332PLDTQ;
 				INFOPLIST_FILE = PopoutAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bid.PopoutAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,7 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5C332PLDTQ;
 				INFOPLIST_FILE = PopoutAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bid.PopoutAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";

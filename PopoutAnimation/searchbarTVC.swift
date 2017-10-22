@@ -44,6 +44,7 @@ class searchbarTVC: UITableViewController , UISearchResultsUpdating , UISearchCo
         resultsController.edgesForExtendedLayout = []
         searchContr.searchResultsUpdater = self
         searchContr.searchBar.returnKeyType = UIReturnKeyType.done
+        searchContr.searchBar.setValue("Done", forKey:"_cancelButtonText")
         
         searchContr.delegate = self
         

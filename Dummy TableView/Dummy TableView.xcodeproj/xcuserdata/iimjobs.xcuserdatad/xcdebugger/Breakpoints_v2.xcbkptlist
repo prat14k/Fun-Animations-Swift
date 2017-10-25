@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dummy TableView/MGSwipeTableCell/MGSwipeTableCell.h"
+            timestampString = "523442257.680748"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "MGSwipeTransition"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MGSwipeAnimation duration]"
+                  moduleName = "Dummy TableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iimjobs/Desktop/Dummy%20TableView/Dummy%20TableView/MGSwipeTableCell/MGSwipeTableCell.h"
+                  timestampString = "523447534.127221"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "6">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MGSwipeAnimation setDuration:]"
+                  moduleName = "Dummy TableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iimjobs/Desktop/Dummy%20TableView/Dummy%20TableView/MGSwipeTableCell/MGSwipeTableCell.h"
+                  timestampString = "523447534.130342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

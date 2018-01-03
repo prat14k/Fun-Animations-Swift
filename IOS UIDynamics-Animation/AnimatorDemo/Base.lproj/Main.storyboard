@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cdz-xH-AH7">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPn-nb-Hab">
+                                <rect key="frame" x="0.0" y="20" width="320" height="528"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="569-xm-Jew" appends="YES" id="LC0-tg-tC1"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewInner" destination="sPn-nb-Hab" id="2ny-BF-1YB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="569-xm-Jew">
+                    <connections>
+                        <action selector="tapAction1:" destination="BYZ-38-t0r" id="5mC-4Z-1tW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="332" y="493"/>
+        </scene>
+        <!--Starter View Controller-->
+        <scene sceneID="kRf-h0-DHF">
+            <objects>
+                <viewController id="cdz-xH-AH7" customClass="StarterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beA-mw-Moz"/>
+                        <viewControllerLayoutGuide type="bottom" id="rHL-8Z-4Gf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xJr-pX-t6k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8B-7a-wkc">
+                                <rect key="frame" x="20" y="20" width="66" height="30"/>
+                                <state key="normal" title="Window 1"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OtX-nj-49Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPi-l8-PCa">
+                                <rect key="frame" x="236" y="377" width="68" height="30"/>
+                                <state key="normal" title="Window 2"/>
+                                <connections>
+                                    <segue destination="dw6-aw-fGa" kind="show" id="Qn2-uM-Y7O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G8B-7a-wkc" firstAttribute="leading" secondItem="xJr-pX-t6k" secondAttribute="leadingMargin" constant="4" id="4SH-Ng-6fk"/>
+                            <constraint firstItem="rHL-8Z-4Gf" firstAttribute="top" secondItem="hPi-l8-PCa" secondAttribute="bottom" constant="73" id="TGv-nd-q2k"/>
+                            <constraint firstItem="G8B-7a-wkc" firstAttribute="top" secondItem="beA-mw-Moz" secondAttribute="bottom" id="WCq-BP-XKg"/>
+                            <constraint firstItem="hPi-l8-PCa" firstAttribute="trailing" secondItem="xJr-pX-t6k" secondAttribute="trailingMargin" id="hJr-vs-AFV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgf-hE-ft2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="-311"/>
+        </scene>
+        <!--Sec View Controller-->
+        <scene sceneID="WEN-ZK-dP9">
+            <objects>
+                <viewController id="dw6-aw-fGa" customClass="secViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FAT-Gl-nU9"/>
+                        <viewControllerLayoutGuide type="bottom" id="4v2-J9-JEp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Phl-7d-nb2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9n-OA-fEX">
+                                <rect key="frame" x="0.0" y="20" width="320" height="452"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.70134157055444835" green="0.97560744230856877" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yYb-D5-gD1" appends="YES" id="ncw-m1-Usa"/>
+                                    <outletCollection property="gestureRecognizers" destination="Twv-xO-ybg" appends="YES" id="X5x-F9-f2L"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewMain" destination="S9n-OA-fEX" id="Fbu-WS-lCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAy-FD-lds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yYb-D5-gD1">
+                    <connections>
+                        <action selector="tapAction:" destination="dw6-aw-fGa" id="gCN-Bc-ify"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="Twv-xO-ybg">
+                    <connections>
+                        <action selector="panAction:" destination="dw6-aw-fGa" id="EZk-3q-6fa"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1076" y="493"/>
+        </scene>
+    </scenes>
+</document>
